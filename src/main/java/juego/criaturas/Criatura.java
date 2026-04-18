@@ -1,3 +1,7 @@
+/**
+ * Clase abstracta que representa una criatura del juego.
+ * Contiene atributos como nombre, salud y fuerza.
+ */
 package juego.criaturas;
 
 public abstract class Criatura {

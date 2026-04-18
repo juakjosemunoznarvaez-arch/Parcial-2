@@ -1,3 +1,6 @@
+/**
+ * Representa un arma que añade daño adicional.
+ */
 package juego.armas;
 
 public class Arma {
@@ -17,7 +20,7 @@ public class Arma {
     public int getDanioAdicional() {
         return danioAdicional;
     }
-
+ 
     public void usar() {
         System.out.println("Usando arma: " + nombre);
     }

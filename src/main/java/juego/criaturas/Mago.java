@@ -1,3 +1,7 @@
+/**
+ * Clase que representa un Guerrero.
+ * Ataca usando armas.
+ */
 package juego.criaturas;
 
 import juego.interfaces.Magico;
