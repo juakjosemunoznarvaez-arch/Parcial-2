@@ -8,24 +8,20 @@ public class Dragon extends Criatura implements Volador {
         super(nombre, salud, fuerza);
     }
 
-    @Override
     public void atacar(Criatura objetivo) {
-        int daño = fuerza * 2;
+        int danio = fuerza * 2;
         System.out.println(nombre + " lanza fuego");
-        objetivo.defender(daño);
+        objetivo.defender(danio);
     }
 
-    @Override
-    public void defender(int daño) {
-        salud -= daño;
+    public void defender(int danio) {
+        salud -= danio;
     }
 
-    @Override
     public void volar() {
-        System.out.println(nombre + " está volando");
+        System.out.println(nombre + " vuela");
     }
 
-    @Override
     public void aterrizar() {
         System.out.println(nombre + " aterriza");
     }
