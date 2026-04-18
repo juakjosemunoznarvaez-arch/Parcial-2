@@ -2,7 +2,6 @@ package juego.criaturas;
 
 import juego.interfaces.Volador;
 
-// Clase que representa un dragón que puede volar
 public class Dragon extends Criatura implements Volador {
 
     public Dragon(String nombre, int salud, int fuerza) {
@@ -11,22 +10,21 @@ public class Dragon extends Criatura implements Volador {
 
     @Override
     public void atacar(Criatura objetivo) {
-        int danio = fuerza * 2;
+        int daño = fuerza * 2;
         System.out.println(nombre + " lanza fuego");
-        objetivo.defender(danio);
+        objetivo.defender(daño);
     }
 
     @Override
-    public void defender(int danio) {
-        salud -= danio;
+    public void defender(int daño) {
+        salud -= daño;
     }
 
-    
     public void volar() {
-        System.out.println(nombre + " vuela");
+        System.out.println(nombre + " está volando");
     }
 
-    
+  
     public void aterrizar() {
         System.out.println(nombre + " aterriza");
     }

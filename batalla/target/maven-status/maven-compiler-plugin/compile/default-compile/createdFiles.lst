@@ -1,0 +1,9 @@
+juego\armas\Arma.class
+juego\Main.class
+juego\criaturas\Guerrero.class
+juego\interfaces\Magico.class
+juego\Batalla.class
+juego\criaturas\Dragon.class
+juego\criaturas\Mago.class
+juego\criaturas\Criatura.class
+juego\interfaces\Volador.class
