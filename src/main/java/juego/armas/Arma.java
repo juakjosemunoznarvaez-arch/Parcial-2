@@ -1,24 +1,19 @@
 package juego.armas;
 
+import juego.criaturas.Criatura;
+
 public class Arma {
+    private int dañoAdicional;
 
-    private String nombre;
-    private int danioAdicional;
-
-    public Arma(String nombre, int danioAdicional) {
-        this.nombre = nombre;
-        this.danioAdicional = danioAdicional;
+    public Arma(int dañoAdicional) {
+        this.dañoAdicional = dañoAdicional;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getDañoAdicional() {
+        return dañoAdicional;
     }
 
-    public int getDanioAdicional() {
-        return danioAdicional;
-    }
-
-    public void usar() {
-        System.out.println("Usando arma: " + nombre);
+    public void atacarConArma(Criatura objetivo) {
+        objetivo.defender(dañoAdicional);
     }
 }

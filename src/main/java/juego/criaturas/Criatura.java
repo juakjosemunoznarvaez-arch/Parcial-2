@@ -1,7 +1,6 @@
 package juego.criaturas;
 
 public abstract class Criatura {
-
     protected String nombre;
     protected int salud;
     protected int fuerza;
@@ -13,10 +12,17 @@ public abstract class Criatura {
     }
 
     public abstract void atacar(Criatura objetivo);
-
-    public abstract void defender(int danio);
+    public abstract void defender(int daño);
 
     public boolean estaViva() {
         return salud > 0;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getSalud() {
+        return salud;
     }
 }
