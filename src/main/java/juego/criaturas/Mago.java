@@ -8,25 +8,21 @@ public class Mago extends Criatura implements Magico {
         super(nombre, salud, fuerza);
     }
 
-    @Override
     public void atacar(Criatura objetivo) {
-        int danio = fuerza + 5;
+        int danio = fuerza + 10;
         System.out.println(nombre + " lanza hechizo");
         objetivo.defender(danio);
     }
 
-    @Override
     public void defender(int danio) {
         salud -= danio;
     }
 
-    @Override
     public void lanzarHechizo() {
-        System.out.println(nombre + " usa magia");
+        System.out.println(nombre + " lanza un hechizo poderoso");
     }
 
-    @Override
     public void aprenderHechizo() {
-        System.out.println(nombre + " aprende hechizo");
+        System.out.println(nombre + " aprende un nuevo hechizo");
     }
 }
