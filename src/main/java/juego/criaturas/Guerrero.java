@@ -11,14 +11,20 @@ public class Guerrero extends Criatura {
         this.arma = arma;
     }
 
+
     @Override
+
+
     public void atacar(Criatura objetivo) {
         int danio = fuerza + arma.getDanioAdicional();
         System.out.println(nombre + " ataca con " + arma.getNombre());
         objetivo.defender(danio);
     }
 
+
     @Override
+
+
     public void defender(int danio) {
         salud -= danio;
     }
