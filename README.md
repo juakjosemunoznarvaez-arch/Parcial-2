@@ -1,5 +1,11 @@
 # Proyecto Batalla
 
+
+## Integrantes
+- Daniela Andrea Gomez 
+- Juan Jose Muñoz Narvez 
+
+
 ## Descripción
 Simulación de combate entre criaturas (Dragón, Mago, Guerrero)
 
@@ -12,7 +18,3 @@ Simulación de combate entre criaturas (Dragón, Mago, Guerrero)
 mvn compile
 mvn test
 java juego.Main
-
-## Integrantes
-- Tu nombre
-- Nombre de tu compañero
